@@ -49,6 +49,24 @@ t('hello', ['John'])
 
 ---
 
+For better organization you can nest objects and reference them using a dot:
+
+```js
+RapidI18n.setTexts({
+  foo: {
+    bar: {
+      gar: {
+        abc: 'Hi.'
+      }
+    }
+  }
+})
+
+t('foo.bar.gar.abc')
+```
+
+---
+
 You can store texts in a separate files and set them dynamically based on e.g. user preference if you want.
 
 ```js
