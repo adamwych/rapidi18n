@@ -1,0 +1,19 @@
+{
+    "name": "rapidi18n",
+    "version": "1.0.0",
+    "description": "JavaScript library to localize your application.",
+    "main": "lib/RapidI18n.js",
+    "scripts": {
+        "prepare": "babel src --out-dir lib",
+        "test": "mocha --require babel-core/register tests/**/**.js"
+    },
+    "author": "Adam Wychowaniec",
+    "license": "MIT",
+    "devDependencies": {
+        "assert": "^1.4.1",
+        "babel-cli": "^6.26.0",
+        "babel-core": "^6.26.0",
+        "babel-preset-env": "^1.6.1",
+        "mocha": "^4.1.0"
+    },
+}
