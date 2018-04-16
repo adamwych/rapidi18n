@@ -32,7 +32,7 @@ export function t(name, replacements) {
         section = section[sectionName]
     }
 
-    return maybe(replaceVariables(section, replacements), '')
+    return maybe(replaceVariables(section, replacements), name)
 }
 
 /**

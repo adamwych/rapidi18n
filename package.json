@@ -1,6 +1,6 @@
 {
     "name": "rapidi18n",
-    "version": "1.0.0",
+    "version": "1.0.2",
     "description": "JavaScript library to localize your application.",
     "main": "lib/RapidI18n.js",
     "scripts": {
