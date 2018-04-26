@@ -1,4 +1,7 @@
 /** @license MIT */
+
+import "babel-polyfill"
+
 export default class RapidI18n {
     /**
      * Sets the dictionary to be used while searching for texts.
@@ -25,6 +28,10 @@ export default class RapidI18n {
  * @return {String} translated text or an empty string
  */
 export function t(name, replacements) {
+    if (name.substr(name.length - 1, 1) === '.') {
+        return maybe(replaceVariables(name, replacements), name)
+    }
+
     let sections = name.split('.')
     let section = RapidI18n.texts
 
